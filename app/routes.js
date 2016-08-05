@@ -14,9 +14,12 @@
 			.when('/empresa',{
 					template:'<empresa></empresa>'
 				})
+			.when('/desarrollador',{
+					template:'<developer></developer>'
+				})
 
 
-				.otherwise({
+			.otherwise({
 					redirectTo:'/'
 				});
 		}
