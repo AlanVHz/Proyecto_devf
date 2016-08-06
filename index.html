@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='injob'>
 <head>
 	<meta charset="UTF-8">
 	<title>InJob</title>
@@ -17,38 +17,12 @@
 	  <nav>
 	    <div class="nav-wrapper ligth blue">
 	      <a href="#" class="center brand-logo">I n  J o b</a>
-	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	      </ul>
 	    </div>
 	  </nav>
 	</header>
 
-	<div class="row"></div>
-	<main class="valign-wrapper">
-		<div class="container valign">
-		 <div class="row">
-	      <div class="col s6">
-	        <a href="#">
-	        	<div class="card-panel center">
-	           		<i class="large material-icons">search</i>
-	           		<p><span><h2>Empresas</h2></span></p>
-	           		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eligendi voluptates itaque, voluptatibus reiciendis ullam ut molestiae rem cum in neque doloremque totam provident pariatur doloribus dolorem odio laborum aliquam!</p>
-	        	</div>
-	        </a>
-	      </div>
-
-		  <div class="col s6">
-	        <a href="#">
-	        	<div class="card-panel center">
-	           		<i class="large material-icons">code</i>
-	           		<p><span><h2>Developers</h2></span></p>
-	           		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eligendi voluptates itaque, voluptatibus reiciendis ullam ut molestiae rem cum in neque doloremque totam provident pariatur doloribus dolorem odio laborum aliquam!</p>
-	        	</div>
-	        </a>
-	      </div>
-		</div>
-	   </div>
-	</main>
+	<div ng-view></div>
+	
 
 		<footer class="page-footer ligth blue">
           <div class="container">
@@ -76,7 +50,13 @@
           </div>
         </footer>
 
-	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+	<script src="app/app.js"></script>
+  <script src="app/components/menuprincipal/menuprincipal.js"></script>
+  <script src="app/components/empresa/empresa.js"></script>
+	<script src="app/routes.js"></script>
 </body>
 </html>
