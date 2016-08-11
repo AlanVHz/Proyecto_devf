@@ -18,7 +18,6 @@
 					template:'<developer></developer>'
 				})
 
-
 			.otherwise({
 					redirectTo:'/'
 				});
